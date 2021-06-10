@@ -22,7 +22,6 @@ const App = () => {
   };
 
   const voteClicked = () => {
-    maxVotes = Math.max(...votes);
     const newVotes = [...votes];
     newVotes[selected] += 1;
     setVotes(newVotes);
